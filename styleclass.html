@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Replace CSS class</title>
+        <style>
+            .highlight{
+                background: yellow;
+            }
+            .disabled{
+                background: rgba(0, 128, 0, 0.39);  
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div id="info" class="disabled">Something Important</div>
+        <script>
+            function changeBackground(){
+                var el=document.getElementById("info");
+                el.className="highlight";
+            }
+            
+        </script>
+        <button type="button" onclick="changeBackground()">Change BG</button>
+
+    </body>
+</html>

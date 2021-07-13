@@ -1,0 +1,29 @@
+<html>
+    <body>
+        
+        <h2>Form Validation</h2>
+        <p>Enter a number less than 10:</p>
+        <input id="numb">
+        <button type="button" onclick="validate()">Submit</button>
+        <p id="demo"></p>
+        <script>
+            function validate(){ 
+                //get the value of the input field by id="numb"
+                    let x=document.getElementById("numb").value; 
+                //if x is not a number or less than one or greater than 10
+                    let text;
+                    if(x<0){
+                        text="Why are you so negative? Be positive :)"
+                    }
+                    else if(isNaN(x)|| x<10){
+                        text="You go boy";
+                    }
+                    else{
+                        text="Read the instructions kid";
+                    }
+                    document.getElementById("demo").innerHTML=text;
+
+            }
+        </script>
+    </body>
+</html>

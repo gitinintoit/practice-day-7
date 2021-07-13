@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Add inline styles to an element</title>
+    </head>
+    <body>
+        <p id="intro">This is my land</p>
+        <p>This is my city</p>
+        <button type="button" onclick="setStyle()">Click to see styling</button>
+        <script>
+            function setStyle(){
+                var el=document.getElementById("intro");
+                el.style.color="blue";
+                el.style.fontSize="20px";
+                el.style.fontWeight="bold";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Get the value of attribute</title>
+    </head>
+    <body>
+
+        <p><a href="https://google.com" target="_blank" id="myLink">Google</a></p>
+
+        <script>
+            var link=document.getElementById("myLink");
+            var href = link.getAttribute("href");
+            document.write(href);
+            document.write("<br>");
+            var target=link.getAttribute("target");
+            document.write(target);
+        </script>
+    </body>
+</html>

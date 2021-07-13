@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Cookies or Not</title>
+    </head>
+    <body>
+        <script>
+            function checkCookiesEnabled(){
+                if(navigator.cookieEnabled){
+                    alert("Cookies are enabled.")
+                }
+                else
+                    alert("Cookies are not enabled.")
+            }
+        </script>
+        <button type="button" onclick="checkCookiesEnabled()">Check cookies status</button>
+    </body>
+</html>
